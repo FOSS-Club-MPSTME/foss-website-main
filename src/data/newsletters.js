@@ -169,6 +169,85 @@ export const newsletters = [
       },
     ],
   },
+  {
+    id: "3",
+    issue: "News Letter 03",
+    title: "Linux: The Open-Source Operating System",
+    date: "14th August, 2026",
+    topics: ["Linux", "Open Source", "Operating Systems"],
+    summary:
+      "Freedom, flexibility, and control over your own computer — that's the idea at the heart of Linux. From servers and supercomputers to student laptops, here's how an open-source kernel became a cornerstone of the FOSS ecosystem.",
+    content: [
+      {
+        type: "text",
+        text: "Imagine using an operating system that gives you freedom, flexibility and control over your computer. That is one of the main ideas behind Linux. Linux is an open-source operating system that is widely used on personal computers, servers, cloud systems, supercomputers and many other devices.",
+      },
+      {
+        type: "text",
+        text: "Linux is not just an alternative to other operating systems. Its open-source nature allows users and developers to study its code, modify it and contribute improvements. This makes Linux an important part of the Free and Open Source Software (FOSS) ecosystem.",
+      },
+      {
+        type: "question",
+        text: "So, what exactly is Linux?",
+      },
+      {
+        type: "text",
+        text: "Linux is an open-source operating system based on the Linux kernel. The kernel manages important parts of a computer, such as its hardware, memory, processes and devices. Complete operating systems built around the Linux kernel are commonly called Linux distributions, or \"distros.\"",
+      },
+      {
+        type: "text",
+        text: "Popular distributions include Ubuntu, Fedora, Debian, Linux Mint and Arch Linux. Different distributions provide different tools and interfaces while using the Linux kernel as their foundation.",
+      },
+      {
+        type: "question",
+        text: "What are the benefits of Linux?",
+      },
+      {
+        type: "text",
+        text: "One of the biggest benefits of Linux is flexibility. Users can choose from many different distributions and customize the operating system according to their needs. Linux can also run efficiently on a wide range of hardware, including older computers.",
+      },
+      {
+        type: "text",
+        text: "Linux is also valuable for learning. Students can explore how an operating system works, use the command line, experiment with programming and understand different aspects of computer systems. Since much of the software is open source, developers can study and contribute to the technologies they use.",
+      },
+      {
+        type: "text",
+        text: "Another important advantage is its strong community. Linux users and developers share documentation, solutions, software and improvements, making it easier for people to learn and solve problems.",
+      },
+      {
+        type: "question",
+        text: "Where is Linux used?",
+      },
+      {
+        type: "text",
+        text: "Linux is used across many areas of technology. It powers a large number of servers and is widely used in cloud computing, networking and cybersecurity. Developers also use Linux for programming and software development because of its powerful command-line tools and development environments.",
+      },
+      {
+        type: "text",
+        text: "Linux is also used in supercomputers, embedded systems and other specialized devices. Its flexibility and reliability make it suitable for both everyday computing and large-scale technological infrastructure.",
+      },
+      {
+        type: "question",
+        text: "How Linux Changes the Way We Use Technology",
+      },
+      {
+        type: "text",
+        text: "Linux gives users more control over their computing environment. Instead of being limited to one fixed system, users can choose a distribution, customize their desktop, install the software they need and interact with the system at a deeper level.",
+      },
+      {
+        type: "text",
+        text: "Its open-source model also encourages collaboration. Developers around the world can contribute code, fix problems, improve security and create new software. This makes Linux more than just an operating system; it is part of a large community-driven ecosystem.",
+      },
+      {
+        type: "text",
+        text: "In conclusion, Linux is much more than an operating system. Its open-source nature provides freedom, flexibility and opportunities to learn about technology. It is used by students, developers, organizations and technology professionals across many different areas, from personal computers to servers and cloud infrastructure. By giving users greater control and encouraging collaboration, Linux continues to demonstrate the possibilities of open-source software.",
+      },
+      {
+        type: "text",
+        text: "Follow along here and on our Instagram every Friday — new issue, new reel, same open-source energy.",
+      },
+    ],
+  },
 ];
 
 export const latestNewsletter = newsletters[newsletters.length - 1];

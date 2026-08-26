@@ -1,17 +1,6 @@
 // src/data/teamMembers.js
 //
 // All team data for the Teams page lives here.
-// - Names, designations, and socials below are real (as provided).
-// - ALL photos (Supercore + every department) live flat in:
-//     public/team/<slug>.png
-//   where <slug> is the person's name, lowercased, spaces replaced with
-//   hyphens (e.g. "Aakarsh Singh" -> aakarsh-singh.png). No subfolders.
-// - Just drop a correctly-named file into public/team/ and it appears on
-//   that member's card automatically — no code changes needed. Missing
-//   photos fall back to an auto-generated initials avatar.
-// - Each member has their OWN independent socials object. Pass whichever
-//   links exist as the 4th argument to member(); anything omitted stays
-//   null and TeamCard simply won't render an icon for it.
 
 let uid = 0;
 
@@ -41,9 +30,7 @@ function member(name, position, description, socialsOverride) {
   };
 }
 
-// ---------------------------------------------------------------------------
-// Supercore — 5 members, single line
-// ---------------------------------------------------------------------------
+// Supercore — leadership cards are arranged in the Team page component.
 export const supercore = {
   title: "Supercore",
   layout: "row",
@@ -55,7 +42,7 @@ export const supercore = {
         github: "https://github.com/bhavyashah1403/",
       }),
     member("Sonal Aggarwal", "Chairperson",
-      "Sets the club's overall direction and represents FOSS MPSTME to the institute and industry partners.",
+      "Sets the club's overall direction & represents it to the institute & industry partners.",
       {
         linkedin: "https://www.linkedin.com/in/sonal-aggarwal-72bb6432b/",
       }),
@@ -80,15 +67,13 @@ export const supercore = {
   ],
 };
 
-// ---------------------------------------------------------------------------
-// Core — groups every department below. No members of its own.
-// ---------------------------------------------------------------------------
+// Core 
 export const coreLabel = "Core";
 
 export const departments = [
   {
     title: "Technical Department",
-    layout: "row", // 5 members, single line
+    layout: "row",
     members: [
       member("Sachin Kumar", "Head",
         "Leads workshop planning and reviews code contributions across club projects.",
@@ -124,7 +109,7 @@ export const departments = [
   },
   {
     title: "Public Relations Department",
-    layout: "row", // 4 members, single line
+    layout: "row",
     members: [
       member("Kian Rodrigues", "Head",
         "Manages outreach to sponsors, speakers, and partner communities.",
@@ -154,7 +139,7 @@ export const departments = [
   },
   {
     title: "Marketing Department",
-    layout: "row", // 2 members, single line
+    layout: "row",
     members: [
       member("Vedang Mane", "Head",
         "Plans promotional campaigns and event marketing calendars.",
@@ -172,7 +157,7 @@ export const departments = [
   },
   {
     title: "Research and Development Department",
-    layout: "row", // 5 members, single line
+    layout: "row",
     members: [
       member("Sanya Gomathi", "Head",
         "Scouts emerging open-source tools and sets the club's technical research agenda.",
@@ -208,7 +193,7 @@ export const departments = [
   },
   {
     title: "Operations Department",
-    layout: "row", // 3 members, single line
+    layout: "row",
     members: [
       member("Arpit Kumar Jena", "Head",
         "Handles logistics, venue bookings, and on-ground event execution.",
@@ -232,7 +217,7 @@ export const departments = [
   },
   {
     title: "Digital Creatives Department",
-    layout: "row", // 4 members, single line
+    layout: "row",
     members: [
       member("Shritej Salian", "Head",
         "Leads the visual identity for events, posters, and social posts.",
@@ -261,7 +246,7 @@ export const departments = [
   },
   {
     title: "Social Media and Content Writing Department",
-    layout: "row", // 5 members, single line
+    layout: "row",
     members: [
       member("Naitik Mehta", "Head",
         "Owns the posting calendar and voice across the club's social channels.",

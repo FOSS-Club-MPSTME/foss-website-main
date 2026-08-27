@@ -205,14 +205,14 @@ export const events = [
       "Overview of club activities, events, projects, and ways to get involved",
     ],
     icon: FaChalkboardTeacher,
-    status: "upcoming",
-    exploreLink: "https://fossunlocked.fossmpstme.com",
+    status: "completed",
+    exploreLink: "https://unlocked.fossmpstme.com",
   },
   {
     id: "hackathon-readiness-workshop",
-    title: "Hackathon Readiness Workshop",
+    title: "Hackbook",
     type: "Workshop",
-    date: "To be Announced",
+    date: "5th - 6th August, 2026",
     location: "MPSTME, Vile Parle",
     participants: "Open to all",
     summary:
@@ -228,6 +228,27 @@ export const events = [
       "Resources, mentorship, and networking with the FOSS Club community",
     ],
     icon: FaLaptopCode,
+    status: "completed",
+  },
+  {
+    id: "init-26",
+    title: "INIT'26",
+    type: "National Hackathon",
+    date: "5-6 September 2026",
+    location: "Online",
+    participants: "Engineering Students",
+    summary:
+      "A 24-hour online hackathon where 3-member teams pick a track — Fintech or Cybersecurity — and build a solution from scratch.",
+    description:
+      "INIT'26 is a 24-hour online hackathon by MPSTME where engineering students form teams of exactly 3 and choose one of two tracks — Fintech or Cybersecurity — to ideate, build, and submit a working solution. Inter-college teams are welcome, and winners get felicitated on Engineer's Day by the Dean.",
+    highlights: [
+      "24-hour online hackathon, two tracks: Fintech & Cybersecurity",
+      "Teams of exactly 3 members, inter-college teams allowed",
+      "Submission requires a project/repo link + idea PPT",
+      "Winners felicitated on Engineer's Day (15 Sept 2026) by the Dean",
+      "Certificates for all, goodies & swag + industry networking for winners/finalists",
+    ],
+    icon: FaTrophy,
     status: "upcoming",
   },
   {

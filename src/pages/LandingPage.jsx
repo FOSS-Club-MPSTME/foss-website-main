@@ -116,26 +116,14 @@ function AboutSection() {
 
 const events = [
   {
-    title: "FOSS Unlocked 2.0",
-    type: "Club Orientation",
-    date: "30th July, 2026",
-    location: "MPSTME, Vile Parle",
-    participants: "100+ Freshers",
+    title: "INIT'26",
+    type: "National Hackathon",
+    date: "5-6 September 2026",
+    location: "Online",
+    participants: "Engineering Students",
     description:
-      "The official welcome for first-years — club projects showcase, technical games, and an intro to the FOSS community.",
-    icon: FaChalkboardTeacher,
-    status: "upcoming",
-    exploreLink: "https://unlocked.fossmpstme.com",
-  },
-  {
-    title: "Hackathon Readiness Workshop",
-    type: "Workshop",
-    date: "To be Announced",
-    location: "MPSTME, Vile Parle",
-    participants: "Open to all",
-    description:
-      "A two-day hands-on primer for first hackathons — Git, GitHub, MVP planning, and a guided mini hackathon.",
-    icon: FaLaptopCode,
+      "A 24-hour online hackathon where 3-member teams pick a track — Fintech or Cybersecurity — and build a solution from scratch.",
+    icon: FaTrophy,
     status: "upcoming",
   },
   {
@@ -148,6 +136,29 @@ const events = [
       "The next edition of our flagship hackathon — bigger tracks, national reach, and real mentorship from industry pros.",
     icon: FaTrophy,
     status: "upcoming",
+  },
+  {
+    title: "FOSS Unlocked 2.0",
+    type: "Club Orientation",
+    date: "30th July, 2026",
+    location: "MPSTME, Vile Parle",
+    participants: "100+ Freshers",
+    description:
+      "The official welcome for first-years — club projects showcase, technical games, and an intro to the FOSS community.",
+    icon: FaChalkboardTeacher,
+    status: "completed",
+    exploreLink: "https://unlocked.fossmpstme.com",
+  },
+  {
+    title: "Hackbook",
+    type: "Workshop",
+    date: "5th - 6th August, 2026",
+    location: "MPSTME, Vile Parle",
+    participants: "Open to all",
+    description:
+      "A two-day hands-on primer for first hackathons — Git, GitHub, MVP planning, and a guided mini hackathon.",
+    icon: FaLaptopCode,
+    status: "completed",
   },
   {
     title: "FOSS Unlocked 1.0",

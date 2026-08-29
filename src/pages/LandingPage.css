@@ -539,142 +539,68 @@ img.about-brief__photo-slot.about-brief__photo-slot--offset:hover {
 
 /* ---------- Meet Our Team ---------- */
 .team {
-  padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 4vw, 3.5rem);
+  --team-padding-top: clamp(3rem, 8vw, 5rem);
+  --team-padding-bottom: var(--team-padding-top);
+  --team-inline-padding: clamp(1.25rem, 4vw, 3.5rem);
+  padding: var(--team-padding-top) var(--team-inline-padding) var(--team-padding-bottom);
   background: var(--bg);
   border-top: 1px solid var(--border);
+  overflow: visible;
 }
 .team__inner {
   max-width: 1280px;
   margin: 0 auto;
+  overflow: visible;
 }
+
 .team__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
   min-width: 0;
+  overflow: visible;
 }
 
-.team-card-wrap {
-  position: relative;
-  min-width: 0;
-  display: flex;
-}
-
-.team-card {
-  position: relative;
+.team .member-card {
   width: 100%;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 0 28px 0 0;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;
-}
-.team-card-wrap:hover .team-card,
-.team-card-wrap:focus-within .team-card {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
 }
 
-.team-card__front {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem 1.25rem 1.5rem;
-}
-.team-card__position {
-  align-self: flex-start;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--green-bright);
-  background: rgba(51, 168, 82, 0.15);
-  padding: 0.3rem 0.55rem;
-  border-radius: 0 8px 0 8px;
-  margin-bottom: 0.75rem;
-}
-.team-card__photo-wrap {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.team__heading-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-width: 0;
-  margin-bottom: 1rem;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
 }
-.team-card__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-.team-card__name {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  text-align: center;
+
+.team__heading-row h2 {
   margin: 0;
-  color: var(--white);
 }
 
-.team-card__back {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--surface);
-  border-left: 2px solid var(--green);
-  padding: 1.3rem 1.25rem;
-  transform: translateY(100%);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.team-card-wrap:hover .team-card__back,
-.team-card-wrap:focus-within .team-card__back {
-  transform: translateY(0);
+.team__heading-link {
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
-.team-card__back-position {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.03em;
-  color: var(--green-bright);
-  margin-bottom: 0.4rem;
-}
-.team-card__back-name {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--white);
-  margin: 0 0 0.6rem;
-  line-height: 1.3;
-}
-.team-card__desc {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--muted);
-  margin: 0 0 0.85rem;
-}
-.team-card__socials {
-  display: flex;
-  gap: 0.9rem;
-}
-.team-card__socials a {
-  color: var(--green-bright);
-  font-size: 1.05rem;
-  display: flex;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-.team-card__socials a:hover {
-  color: var(--white);
-  transform: translateY(-2px);
+@media (min-width: 901px) {
+  .team {
+    --team-padding-bottom: clamp(12rem, 10vw, 14rem);
+  }
+
+  .team .section-head {
+    max-width: none;
+    width: 100%;
+  }
+
+  .team__heading-row {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
-.team__footer-link {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: center;
+@media (min-width: 561px) and (max-width: 900px) {
+  .team {
+    --team-padding-bottom: clamp(8rem, 14vw, 10rem);
+  }
 }
 
 /* ---------- Responsive ---------- */
@@ -701,8 +627,6 @@ img.about-brief__photo-slot.about-brief__photo-slot--offset:hover {
   .events__grid { grid-template-columns: 1fr; }
   .newsletter-stack { max-width: 280px; margin: 0 auto; }
   .team__grid { grid-template-columns: 1fr; }
-  .team-card__back { padding: 1rem 1rem; }
-  .team-card__desc { font-size: 0.76rem; }
   .section-head { margin-bottom: 1.75rem; }
 }
 
@@ -719,10 +643,7 @@ img.about-brief__photo-slot.about-brief__photo-slot--offset:hover {
   * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
-/* Asav was here n made these changes below — these fixed pixel offsets only
-   make sense on very wide desktop viewports. On tablet/mobile they were
-   shoving section headings off-screen and causing horizontal scroll, so
-   they're now scoped to large screens only, with a mobile reset below. */
+/* Legacy page-offset tweaks, scoped away from tablet/mobile to avoid horizontal scroll. */
 
 @media (min-width: 1200px) {
   #root > div > section.events > div.section-head {

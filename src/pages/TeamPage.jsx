@@ -140,6 +140,7 @@ function SupercoreSection({
                 <TeamMemberCard
                   member={member}
                   index={index}
+                  priority={true}
                   {...memberCardState}
                 />
               </div>
@@ -151,6 +152,7 @@ function SupercoreSection({
                 <TeamMemberCard
                   member={member}
                   index={index + primaryLeadership.length}
+                  priority={true}
                   {...memberCardState}
                 />
               </div>
@@ -219,6 +221,7 @@ function DepartmentSection({
                   key={member.id}
                   member={member}
                   index={memberIndex}
+                  priority={index === 0 && row.id === "heads"}
                   {...memberCardState}
                 />
               ))}

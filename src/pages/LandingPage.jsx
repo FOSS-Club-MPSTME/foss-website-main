@@ -376,6 +376,7 @@ function TeamSection() {
               key={member.id}
               member={member}
               index={index}
+              priority={true}
               {...teamCardInteraction}
             />
           ))}

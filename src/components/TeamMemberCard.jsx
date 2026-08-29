@@ -110,8 +110,10 @@ export default function TeamMemberCard({
   isMobileLayout,
   activeMobileDescriptionId,
   setActiveMobileDescriptionId,
+  priority = false,
 }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const hoverTimeout = useRef(null);
   const descriptionId = `${member.id}-description`;
   const isMobileDescriptionOpen = isMobileLayout && activeMobileDescriptionId === member.id;
@@ -183,8 +185,13 @@ export default function TeamMemberCard({
           <img
             src={member.photo}
             alt={member.name}
-            className={`member-card__photo ${getPhotoClassName(member.name)}`}
-            loading="lazy"
+            width="500"
+            height="625"
+            decoding="async"
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : "auto"}
+            className={`member-card__photo ${getPhotoClassName(member.name)}${isLoaded ? " is-loaded" : ""}`}
+            onLoad={() => setIsLoaded(true)}
             onError={(event) => handleImgError(event, member.name)}
           />
         </div>

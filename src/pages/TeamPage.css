@@ -636,7 +636,12 @@ button { font-family: inherit; cursor: pointer; }
   object-position: var(--photo-x) var(--photo-y);
   transform: translate(var(--photo-offset-x), var(--photo-offset-y)) scale(var(--photo-scale));
   transform-origin: var(--photo-origin);
-  transition: transform 0.32s ease, filter 0.32s ease;
+  opacity: 0;
+  transition: transform 0.32s ease, filter 0.32s ease, opacity 0.35s ease;
+}
+
+.member-card__photo.is-loaded {
+  opacity: 1;
 }
 
 .member-card__photo--aakarsh-singh,

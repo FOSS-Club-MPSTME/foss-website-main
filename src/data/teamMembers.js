@@ -24,7 +24,7 @@ function member(name, position, description, socialsOverride) {
     id: `member-${uid}`,
     name,
     position,
-    photo: `/team/${slugify(name)}.png`,
+    photo: `/team-images/${slugify(name)}.webp`,
     description,
     socials: { ...defaultSocials(), ...(socialsOverride || {}) },
   };

@@ -90,7 +90,7 @@ export const newsletters = [
     id: "2",
     issue: "News Letter 02",
     title: "Blender: How an Open-Source Tool Challenged a Billion-Dollar Industry",
-    date: "7th August, 2026",
+    date: "14th August, 2026",
     topics: ["Blender", "Open Source", "3D Graphics"],
     summary:
       "In 1994, 3D graphics software cost tens of thousands of dollars and was locked behind corporate paywalls. Here's how a free, open-source program built by a small Dutch studio grew to challenge Hollywood VFX houses, gaming giants, and NVIDIA and Epic Games themselves.",
@@ -173,7 +173,7 @@ export const newsletters = [
     id: "3",
     issue: "News Letter 03",
     title: "Linux: The Open-Source Operating System",
-    date: "14th August, 2026",
+    date: "28th August, 2026",
     topics: ["Linux", "Open Source", "Operating Systems"],
     summary:
       "Freedom, flexibility, and control over your own computer — that's the idea at the heart of Linux. From servers and supercomputers to student laptops, here's how an open-source kernel became a cornerstone of the FOSS ecosystem.",
@@ -248,6 +248,117 @@ export const newsletters = [
       },
     ],
   },
+  {
+  id: "4",
+  issue: "News Letter 04",
+  title: "Ardour: Open-Source Freedom for Sound Creators",
+  date: "11th September, 2026",
+  topics: ["Ardour", "Open Source", "Audio Production"],
+  summary:
+    "In audio production, tools shape sound — but code dictates who controls it. Ardour, an open-source digital audio workstation, is reclaiming creative independence for sound engineers, musicians and producers worldwide.",
+  content: [
+    {
+      type: "text",
+      text: "In audio production, tools shape sound — but code dictates who controls it. For decades, the professional audio ecosystem has gated digital audio workstations such that artists must continuously rent their right to create anything. Open sourcing this changes that equation entirely; it turns software into a permanent, communal infrastructure for human creativity.",
+    },
+    {
+      type: "text",
+      text: "In this edition, we explore how open-source software is reclaiming creative independence for sound engineers, musicians and producers worldwide — and why an open approach to software design is vital for the future of audio production.",
+    },
+    {
+      type: "question",
+      text: "Why does open source matter for audio?",
+    },
+    {
+      type: "text",
+      text: "Audio files outlive software companies. A session recorded today might need to be remixed in ten years, restored in thirty, or archived for a century. When that music is bound to proprietary formats, closed plug-in architectures, or online license activation servers, its survival depends on the financial stability of a single vendor. Open source matters for audio because it guarantees ownership, transparency and longevity.",
+    },
+    {
+      type: "text",
+      text: "Uncompromised Longevity: open file formats and accessible source code ensure that music remains accessible regardless of market trends, corporate acquisitions or discontinued support.",
+    },
+    {
+      type: "text",
+      text: "Complete System Control: audio processing demands absolute stability and low latency. Open-source tools allow engineers to optimize, audit and inspect every layer of their software environment without background bloat or hidden data harvesting.",
+    },
+    {
+      type: "text",
+      text: "Community-Driven Innovation: feature roadmaps are shaped directly by the musicians and sound engineers using the software every day, rather than by corporate shareholders seeking quarterly growth targets.",
+    },
+    {
+      type: "question",
+      text: "What crucial problems does Ardour solve?",
+    },
+    {
+      type: "text",
+      text: "Defeating the Monthly Subscription Trap: industry giants like Pro Tools lock users into endless rental models — stop paying, and you lose access to your own work. Ardour is permanently yours, using open-standard files that ensure your projects belong to you forever.",
+    },
+    {
+      type: "text",
+      text: "Killing DRM Bloat and Session Crashes: commercial DAWs are often weighed down by invasive anti-piracy tools, like iLok, and background marketplace ads that crash your system. Ardour strips away the corporate fluff to deliver an ultra-lightweight, rock-solid recording engine.",
+    },
+    {
+      type: "text",
+      text: "Abolishing the Expensive 'Mac Tax': high-end audio engineering historically required expensive Apple hardware. Ardour delivers identical, top-tier multi-track performance across Linux, Windows and macOS, letting you mix professional records on budget-friendly setups.",
+    },
+    {
+      type: "text",
+      text: "Beating Planned Obsolescence: when a commercial software company goes under, your project history dies with it. Because Ardour saves files in transparent, open-source XML formats, your sessions are safe from becoming unopenable digital ghosts decades from now.",
+    },
+    {
+      type: "question",
+      text: "What is the global impact of Ardour?",
+    },
+    {
+      type: "text",
+      text: "Ardour isn't just code; it is actively changing the baseline economics of being a sound creator by removing financial barriers to entry.",
+    },
+    {
+      type: "text",
+      text: "Democratizing Audio Education: for underfunded schools and community centers, buying software licenses for a full classroom is impossible. Ardour lets schools build fully functional audio labs for free, giving the next generation of engineers an equal start.",
+    },
+    {
+      type: "text",
+      text: "Giving Old Computers a Second Life: instead of forcing creators onto an expensive hardware upgrade treadmill, Ardour's highly optimized design transforms decade-old, discarded laptops into zero-latency recording studios.",
+    },
+    {
+      type: "text",
+      text: "Protecting Independent Media Sovereignty: podcasters, community radio stations and investigative journalists rely on Ardour to produce vital stories without being dependent on proprietary, data-tracking corporate ecosystems.",
+    },
+    {
+      type: "question",
+      text: "How does Ardour's economy actually work?",
+    },
+    {
+      type: "text",
+      text: "There's a myth that free software means unfunded software. Ardour spends a lot of its existence proving that wrong. There's no VC money behind it, no parent company waiting to flip it for a payout. It runs on subscriptions: small, optional, monthly payments from the people who actually use the thing.",
+    },
+    {
+      type: "text",
+      text: "The model is pay-what-you-want. Grab the source and compile it yourself for nothing, or subscribe for a few dollars a month and get the latest stable builds and nightly updates without the hassle. A year of that support runs around $120 — less than a single seat of most commercial DAWs, which routinely land between $300 and $1,500 before update fees even show up.",
+    },
+    {
+      type: "text",
+      text: "What's more interesting is what that money actually funds. For years, Ardour's lead developer kept the project alive largely out of pocket, picking up outside contract work between stretches of subscriber support. Every release, every bug fix, came out of that patchwork of small payments and volunteer hours — not a boardroom deciding what features would sell best next quarter.",
+    },
+    {
+      type: "text",
+      text: "It's not purely charity, either. Harrison Mixbus, a commercial and closed-source DAW, is built directly on Ardour's engine. So the same open codebase powering a free recording studio also bankrolls a for-profit product elsewhere. Open source and a viable business aren't opposites — just different bets on where the money comes from.",
+    },
+    {
+      type: "text",
+      text: "Ardour was never really trying to be a free Pro Tools. It's an argument, dressed up as software, that the tools people use to make things shouldn't come with strings attached — no subscription that expires, no file format that dies with the company that made it, no hardware tax just to get in the door.",
+    },
+    {
+      type: "text",
+      text: "That argument holds up because economics backs it. A project funded by its own users, not shareholders, has no reason to nickel-and-dime the people it serves. And the impact shows up everywhere, from underfunded classrooms to community radio stations that can't afford to depend on someone else's server. Software this important probably shouldn't belong to any one company to begin with — Ardour is one of the clearer proofs of what happens when it doesn't.",
+    },
+    {
+      type: "text",
+      text: "Follow along here and on our Instagram every Friday — new issue, new reel, same open-source energy.",
+    },
+  ],
+},
 ];
 
 export const latestNewsletter = newsletters[newsletters.length - 1];

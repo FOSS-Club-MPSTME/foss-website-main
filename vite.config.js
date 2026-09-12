@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,        // listen on 0.0.0.0, not just localhost — exposes it to your LAN
-    port: 5173,         // fixed port so the URL doesn't change between runs
+    port: 3000,         // fixed port so the URL doesn't change between runs
     strictPort: true,   // fail loudly instead of silently picking a different port
   },
   preview: {

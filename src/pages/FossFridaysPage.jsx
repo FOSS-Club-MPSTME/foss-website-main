@@ -18,8 +18,8 @@ function FossFridaysHero() {
         <span className="eyebrow">// weekly dose of open source</span>
         <h1>FOSS Fridays</h1>
         <p className="ff-hero__subtitle">
-          Every Friday, we break down an open-source project, tool, or bit of
-          tech news — in a short newsletter and an even shorter reel. Pick an
+          Every Alternate Friday, we break down an open-source project, tool, or bit of
+          tech news — in a short newsletter. Pick an
           issue below to catch up.
         </p>
       </motion.div>

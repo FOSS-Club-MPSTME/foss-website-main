@@ -268,16 +268,16 @@ function FossFridaysSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="eyebrow">// weekly dose of open source</span>
+          <span className="eyebrow">// bi-weekly dose of open source</span>
           <h2>FOSS Fridays</h2>
           <p>
-            FOSS Fridays is our weekly newsletter — every Friday, our members break
+            FOSS Fridays is our bi-weekly newsletter — every  alternate Friday, our members break
             down open-source projects, tools, and tech news for the community.
             Quick to read, easy to learn from, and made entirely by students,
             for students.
           </p>
           <div className="foss-fridays__meta">
-            <span><FaRegCalendarAlt size={13} /> Every Friday</span>
+            <span><FaRegCalendarAlt size={13} /> Every alternate Friday</span>
             <span><FaUsers size={13} /> Written by club members</span>
           </div>
           <Link to="/fossfridays" className="about-brief__link">

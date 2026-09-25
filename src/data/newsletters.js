@@ -359,6 +359,164 @@ export const newsletters = [
     },
   ],
 },
+{
+  id: "5",
+  issue: "News Letter 05",
+  title: "LlamaIndex: Connecting AI to Your Data",
+  date: "25th September, 2026",
+  topics: ["LlamaIndex", "Open Source", "AI / RAG"],
+  summary:
+    "In front of you is a 500-page PDF, thousands of documents, endless database records — somewhere inside lies the answer, but asking an LLM to find it can feel like searching a library with no catalogue. This is where LlamaIndex steps in.",
+  content: [
+    {
+      type: "text",
+      text: "LlamaIndex is an open-source framework designed to connect Large Language Models (LLMs) with external data. It helps AI applications access, organise and retrieve information from sources such as documents, PDFs, databases, APIs and websites — acting as a bridge between an LLM and the information it actually needs, instead of relying only on the data the model was originally trained on.",
+    },
+    {
+      type: "text",
+      text: "This makes it useful for building AI-powered search tools, document question-answering systems, chatbots that understand your data, and Retrieval-Augmented Generation (RAG) applications.",
+    },
+    {
+      type: "question",
+      text: "Why does LlamaIndex matter?",
+    },
+    {
+      type: "text",
+      text: "Standard LLMs lack specific business context. LlamaIndex bridges this gap, letting developers build advanced RAG pipelines and autonomous data agents. It natively integrates with major vector databases like Pinecone, Chroma and Qdrant, making it production-ready, and handles the heavy lifting of data plumbing so developers can focus on building intelligent, context-aware applications that don't hallucinate.",
+    },
+    {
+      type: "question",
+      text: "What problem is being solved?",
+    },
+    {
+      type: "text",
+      text: "While LLMs are brilliant at reasoning, they are frozen in time and completely blind to private, real-world data — they cannot read internal PDFs, query product SQL databases, or access company Slack channels out of the box. LlamaIndex acts as the data bridge, solving three major bottlenecks.",
+    },
+    {
+      type: "text",
+      text: "The Ingestion Problem: raw data is messy, and LlamaIndex eliminates custom data pipeline engineering by providing pre-built connectors that automatically extract, clean and chunk data from hundreds of sources.",
+    },
+    {
+      type: "text",
+      text: "The Hallucination Problem: LLMs guess when they lack facts, so LlamaIndex builds exact search indexes, like vector stores, so the model can retrieve the precise sentence or paragraph needed to answer a question factually.",
+    },
+    {
+      type: "text",
+      text: "The Token Limit Problem: you cannot dump an entire 500-page manual into a single prompt, so LlamaIndex ensures only the most relevant, compressed snippets of data are fed to the model, saving costs and preventing context overload. Ultimately, it stops developers from building custom data plumbing, turning static LLMs into secure, context-aware enterprise systems.",
+    },
+    {
+      type: "question",
+      text: "How do you get started with LlamaIndex?",
+    },
+    {
+      type: "text",
+      text: "Let's build a simple AI assistant that answers questions about your notes. You'll need Python installed, a code editor such as VS Code, and a Groq API key.",
+    },
+    {
+      type: "text",
+      text: "Step 1: Create a project folder. Open your terminal and run:",
+    },
+    {
+      type: "code",
+      language: "bash",
+      text: "mkdir llamaindex-demo\ncd llamaindex-demo",
+    },
+    {
+      type: "text",
+      text: "This creates a folder for your project and moves you into it.",
+    },
+    {
+      type: "text",
+      text: "Step 2: Create a virtual environment. A virtual environment keeps this project's packages separate from your other projects.",
+    },
+    {
+      type: "code",
+      language: "bash",
+      text: "python -m venv .venv",
+    },
+    {
+      type: "text",
+      text: "On macOS or Linux, use python3 if python is unavailable. Activate the environment using the command for your system:",
+    },
+    {
+      type: "code",
+      language: "bash",
+      text: "# Windows Command Prompt\n.venv\\Scripts\\activate.bat\n\n# Windows PowerShell\n.\\.venv\\Scripts\\Activate.ps1\n\n# macOS or Linux\nsource .venv/bin/activate",
+    },
+    {
+      type: "text",
+      text: "Step 3: Install the required packages. Run this command inside your activated environment:",
+    },
+    {
+      type: "code",
+      language: "bash",
+      text: "python -m pip install llama-index-core llama-index-readers-file llama-index-llms-groq llama-index-embeddings-huggingface",
+    },
+    {
+      type: "text",
+      text: "These packages let LlamaIndex read files, connect to Groq, and make your notes searchable.",
+    },
+    {
+      type: "text",
+      text: "Step 4: Get your Groq API key. Visit the Groq Console, sign in, and create an API key.",
+    },
+    {
+      type: "text",
+      text: "Step 5: Add some notes. Inside your project folder, create a folder named data. Inside it, create a file called notes.txt and add:",
+    },
+    {
+      type: "code",
+      language: "text",
+      text: "Our coding club meets every Friday at 4 PM.\nMeetings take place in Room 202.\nMembers learn Python and build small AI projects.",
+    },
+    {
+      type: "text",
+      text: "Save the file.",
+    },
+    {
+      type: "text",
+      text: "Step 6: Create your assistant. Create a file called app.py in your project folder, outside the data folder, and paste this code into it:",
+    },
+    {
+      type: "code",
+      language: "python",
+      text: "from getpass import getpass\nfrom llama_index.core import (\n    Settings,\n    SimpleDirectoryReader,\n    VectorStoreIndex,\n)\nfrom llama_index.llms.groq import Groq\nfrom llama_index.embeddings.huggingface import HuggingFaceEmbedding\n\n# Connect to Groq to generate answers.\nSettings.llm = Groq(\n    model=\"openai/gpt-oss-20b\",\n    api_key=getpass(\"Enter your Groq API key: \").strip(),\n    api_base=\"https://api.groq.com/openai/v1\",\n)\n\n# Make the notes searchable using a local embedding model.\nSettings.embed_model = HuggingFaceEmbedding(\n    model_name=\"BAAI/bge-small-en-v1.5\"\n)\n\n# Read the notes and create a searchable index.\ndocuments = SimpleDirectoryReader(\"data\").load_data()\nindex = VectorStoreIndex.from_documents(documents)\n\n# Ask a question.\nquery_engine = index.as_query_engine()\nquestion = input(\"Ask about your notes: \")\nresponse = query_engine.query(question)\nprint(\"\\nAnswer:\", response)",
+    },
+    {
+      type: "text",
+      text: "Step 7: Run your program. Save app.py, then run this command from your project folder:",
+    },
+    {
+      type: "code",
+      language: "bash",
+      text: "python app.py",
+    },
+    {
+      type: "text",
+      text: "The first run downloads the embedding model, so it may take a little longer. Congrats — you've built your first document assistant! This example creates embeddings locally and sends relevant text to Groq to generate a response. Try changing the notes and asking different questions.",
+    },
+    {
+      type: "question",
+      text: "How has LlamaIndex changed lives?",
+    },
+    {
+      type: "text",
+      text: "LlamaIndex transformed lives by eliminating the manual friction of data plumbing for artificial intelligence. Before it existed, developers spent weeks writing custom web scrapers and chunking scripts just to get an AI to read private company data. LlamaIndex turned this grueling engineering bottleneck into a few lines of code.",
+    },
+    {
+      type: "text",
+      text: "It reshaped three major areas: developers shifted focus from data infrastructure to building core product logic; businesses cut enterprise client onboarding times from weeks to days by automating data extraction; and regulated industries like healthcare and finance were able to safely build local, offline AI systems without data leaks.",
+    },
+    {
+      type: "text",
+      text: "In conclusion, LlamaIndex has evolved from a simple data connector into the definitive blueprint for production-ready, context-aware AI applications. By solving the complex mechanics of data ingestion, retrieval precision and agentic workflows, it eliminates the need for developers to build fragile, custom data pipelines from scratch.",
+    },
+    {
+      type: "text",
+      text: "Follow along here and on our Instagram every Friday — new issue, new reel, same open-source energy.",
+    },
+  ],
+},
 ];
 
 export const latestNewsletter = newsletters[newsletters.length - 1];

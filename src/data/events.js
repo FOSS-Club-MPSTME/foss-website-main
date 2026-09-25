@@ -13,8 +13,74 @@ import {
 //                    and on the Events page's Past Events cards.
 // - `description` -> full paragraph, used on the Events page's Upcoming cards.
 // - `highlights`  -> kept for a future event-detail view; not rendered yet.
+// Whenever a new event is added, make sure to keep the new event at the top of the list for both upcoming and completed events.
 export const events = [
   // ---------- completed (newest first) ----------
+  {
+    id: "init-26",
+    title: "INIT'26",
+    type: "National Hackathon",
+    date: "5-6 September 2026",
+    location: "Online",
+    participants: "Engineering Students",
+    summary:
+      "A 24-hour online hackathon where 3-member teams pick a track — Fintech or Cybersecurity — and build a solution from scratch.",
+    description:
+      "INIT'26 is a 24-hour online hackathon by MPSTME where engineering students form teams of exactly 3 and choose one of two tracks — Fintech or Cybersecurity — to ideate, build, and submit a working solution. Inter-college teams are welcome, and winners get felicitated on Engineer's Day by the Dean.",
+    highlights: [
+      "24-hour online hackathon, two tracks: Fintech & Cybersecurity",
+      "Teams of exactly 3 members, inter-college teams allowed",
+      "Submission requires a project/repo link + idea PPT",
+      "Winners felicitated on Engineer's Day (15 Sept 2026) by the Dean",
+      "Certificates for all, goodies & swag + industry networking for winners/finalists",
+    ],
+    icon: FaTrophy,
+    status: "completed",
+  },
+  {
+    id: "hackathon-readiness-workshop",
+    title: "Hackbook",
+    type: "Workshop",
+    date: "5th - 6th August, 2026",
+    location: "MPSTME, Vile Parle",
+    participants: "Open to all",
+    summary:
+      "A two-day hands-on primer for first hackathons — Git, GitHub, MVP planning, and a guided mini hackathon.",
+    description:
+      "A two-day hands-on workshop designed to prepare first-year students for their first hackathon — covering web development fundamentals, Git and GitHub, MVP planning and ideation, responsible AI-assisted development, and a guided mini hackathon to put it all into practice.",
+    highlights: [
+      "Beginner-friendly introduction to hackathons and project development",
+      "Hands-on sessions covering web fundamentals, Git, and GitHub",
+      "Guided mini hackathon with team-based problem solving",
+      "MVP planning, ideation, and effective project pitching",
+      "Practical session on responsible AI-assisted development and debugging",
+      "Resources, mentorship, and networking with the FOSS Club community",
+    ],
+    icon: FaLaptopCode,
+    status: "completed",
+  },
+  {
+    id: "foss-unlocked-2",
+    title: "FOSS Unlocked 2.0",
+    type: "Club Orientation",
+    date: "30th July, 2026",
+    location: "MPSTME, Vile Parle",
+    participants: "100+ Freshers",
+    summary:
+      "The official welcome for first-years — club showcase, technical games, and an intro to the FOSS community.",
+    description:
+      "The official welcome for first-years — a showcase of club projects and activities from the past year, technical games and interactive activities with the OC, and an introduction to the FOSS community, its committee, and its mentors.",
+    highlights: [
+      "100+ freshers introduced to the FOSS community",
+      "Interactive technical games and quizzes with exciting rewards",
+      "Display of club projects and activities from the past year",
+      "Networking opportunities with club members and mentors",
+      "Overview of club activities, events, projects, and ways to get involved",
+    ],
+    icon: FaChalkboardTeacher,
+    status: "completed",
+    exploreLink: "https://unlocked.fossmpstme.com",
+  },
   {
     id: "code-forge-2026",
     title: "Code Forge 2026",
@@ -101,27 +167,6 @@ export const events = [
     status: "completed",
   },
   {
-    id: "mumbaifoss-2025",
-    title: "MumbaiFOSS 2025",
-    type: "Conference",
-    date: "19th April, 2025",
-    location: "MPSTME, NMIMS",
-    participants: "300+",
-    summary:
-      "United 300+ FOSS enthusiasts across Mumbai with project showcases, workshops, and expert talks.",
-    description:
-      "A major Free and Open Source Software conference with the aim of uniting the FOSS community of Mumbai, fostering collaboration and knowledge sharing.",
-    highlights: [
-      "Over 300 participants from across Mumbai and beyond",
-      "Project showcases including Skyflo, FreeCAD, OSM, and more",
-      "Workshops on KiCad and DIY Maker Badges",
-      "Talks from industry experts on various FOSS technologies",
-      "Panel discussion on OSS culture for next-gen engineers",
-    ],
-    icon: FaGlobe,
-    status: "completed",
-  },
-  {
     id: "hackforge-2025",
     title: "HackForge 2025",
     type: "Hackathon",
@@ -140,6 +185,27 @@ export const events = [
       "40 participants in the final round, using only open-source tools",
     ],
     icon: FaCode,
+    status: "completed",
+  },
+  {
+    id: "mumbaifoss-2025",
+    title: "MumbaiFOSS 2025",
+    type: "Conference",
+    date: "19th April, 2025",
+    location: "MPSTME, NMIMS",
+    participants: "300+",
+    summary:
+      "United 300+ FOSS enthusiasts across Mumbai with project showcases, workshops, and expert talks.",
+    description:
+      "A major Free and Open Source Software conference with the aim of uniting the FOSS community of Mumbai, fostering collaboration and knowledge sharing.",
+    highlights: [
+      "Over 300 participants from across Mumbai and beyond",
+      "Project showcases including Skyflo, FreeCAD, OSM, and more",
+      "Workshops on KiCad and DIY Maker Badges",
+      "Talks from industry experts on various FOSS technologies",
+      "Panel discussion on OSS culture for next-gen engineers",
+    ],
+    icon: FaGlobe,
     status: "completed",
   },
   {
@@ -187,66 +253,22 @@ export const events = [
 
   // ---------- upcoming ----------
   {
-    id: "foss-unlocked-2",
-    title: "FOSS Unlocked 2.0",
-    type: "Club Orientation",
-    date: "30th July, 2026",
+    id: "hackforge-2026",
+    title: "HackForge 2026",
+    type: " National Flagship Hackathon",
+    date: "17th - 18th October, 2026",
     location: "MPSTME, Vile Parle",
-    participants: "100+ Freshers",
+    participants: "Open to Engineering Students",
     summary:
-      "The official welcome for first-years — club showcase, technical games, and an intro to the FOSS community.",
+      "A 24-hour overnight hackathon — 3-member teams tackle real-world challenges across two specialized tracks.",
     description:
-      "The official welcome for first-years — a showcase of club projects and activities from the past year, technical games and interactive activities with the OC, and an introduction to the FOSS community, its committee, and its mentors.",
+      "HackForge is a 24-hour overnight hackathon by FOSS Club MPSTME for developers and problem-solvers to tackle real-world challenges and build working solutions. It features a preliminary online round followed by an offline hackathon across two tracks: Intermediate (Secure & Smart Automation) and Advanced (Quantitative Systems — Constrained Execution).",
     highlights: [
-      "100+ freshers introduced to the FOSS community",
-      "Interactive technical games and quizzes with exciting rewards",
-      "Display of club projects and activities from the past year",
-      "Networking opportunities with club members and mentors",
-      "Overview of club activities, events, projects, and ways to get involved",
-    ],
-    icon: FaChalkboardTeacher,
-    status: "completed",
-    exploreLink: "https://unlocked.fossmpstme.com",
-  },
-  {
-    id: "hackathon-readiness-workshop",
-    title: "Hackbook",
-    type: "Workshop",
-    date: "5th - 6th August, 2026",
-    location: "MPSTME, Vile Parle",
-    participants: "Open to all",
-    summary:
-      "A two-day hands-on primer for first hackathons — Git, GitHub, MVP planning, and a guided mini hackathon.",
-    description:
-      "A two-day hands-on workshop designed to prepare first-year students for their first hackathon — covering web development fundamentals, Git and GitHub, MVP planning and ideation, responsible AI-assisted development, and a guided mini hackathon to put it all into practice.",
-    highlights: [
-      "Beginner-friendly introduction to hackathons and project development",
-      "Hands-on sessions covering web fundamentals, Git, and GitHub",
-      "Guided mini hackathon with team-based problem solving",
-      "MVP planning, ideation, and effective project pitching",
-      "Practical session on responsible AI-assisted development and debugging",
-      "Resources, mentorship, and networking with the FOSS Club community",
-    ],
-    icon: FaLaptopCode,
-    status: "completed",
-  },
-  {
-    id: "init-26",
-    title: "INIT'26",
-    type: "National Hackathon",
-    date: "5-6 September 2026",
-    location: "Online",
-    participants: "Engineering Students",
-    summary:
-      "A 24-hour online hackathon where 3-member teams pick a track — Fintech or Cybersecurity — and build a solution from scratch.",
-    description:
-      "INIT'26 is a 24-hour online hackathon by MPSTME where engineering students form teams of exactly 3 and choose one of two tracks — Fintech or Cybersecurity — to ideate, build, and submit a working solution. Inter-college teams are welcome, and winners get felicitated on Engineer's Day by the Dean.",
-    highlights: [
-      "24-hour online hackathon, two tracks: Fintech & Cybersecurity",
-      "Teams of exactly 3 members, inter-college teams allowed",
-      "Submission requires a project/repo link + idea PPT",
-      "Winners felicitated on Engineer's Day (15 Sept 2026) by the Dean",
-      "Certificates for all, goodies & swag + industry networking for winners/finalists",
+      "Preliminary online round followed by a 24-hour offline hackathon",
+      "Real-world problem statements across two specialized tracks",
+      "₹15,000 prize pool",
+      "Participation certificates for all eligible participants",
+      "Collaborative, innovation-driven hackathon environment",
     ],
     icon: FaTrophy,
     status: "upcoming",

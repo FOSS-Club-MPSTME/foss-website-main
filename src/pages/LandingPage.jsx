@@ -123,13 +123,13 @@ function AboutSection() {
 
 const events = [
   {
-    title: "INIT'26",
-    type: "National Hackathon",
-    date: "5th - 6th September, 2026",
+    title: "HackForge 2026",
+    type: " National Flagship Hackathon",
+    date: "17th - 18th October, 2026",
     location: "MPSTME, Vile Parle",
-    participants: "Engineering Students",
+    participants: "Open to Engineering Students",
     description:
-      "A 24-hour online hackathon where 3-member teams pick a track — Fintech or Cybersecurity — and build a solution from scratch.",
+      "A 24-hour overnight hackathon — 3-member teams tackle real-world challenges across two specialized tracks.",
     icon: FaTrophy,
     status: "upcoming",
   },
@@ -143,6 +143,17 @@ const events = [
       "The next edition of our flagship hackathon — bigger tracks, national reach, and real mentorship from industry pros.",
     icon: FaTrophy,
     status: "upcoming",
+  },
+  {
+    title: "INIT'26",
+    type: "National Hackathon",
+    date: "5th - 6th September, 2026",
+    location: "MPSTME, Vile Parle",
+    participants: "Engineering Students",
+    description:
+      "A 24-hour online hackathon where 3-member teams pick a track — Fintech or Cybersecurity — and build a solution from scratch.",
+    icon: FaTrophy,
+    status: "completed",
   },
   {
     title: "Hackbook",
@@ -176,17 +187,6 @@ const events = [
     description:
       "A high-intensity engineering competition with Taqneeq 18.0 — debugging, optimizing, and shipping real codebases.",
     icon: FaCode,
-    status: "completed",
-  },
-  {
-    title: "COMMIT 1.0",
-    type: "National Hackathon · Flagship",
-    date: "6th - 13th September 2025",
-    location: "MPSTME, Vile Parle",
-    participants: "Cybersecurity · Sustainability · FinTech",
-    description:
-      "Our flagship multi-round hackathon across three tracks, with a ₹18,000 prize pool and a 7-hour build phase.",
-    icon: FaTrophy,
     status: "completed",
   },
 ];

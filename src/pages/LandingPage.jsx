@@ -177,7 +177,6 @@ const events = [
       "The official welcome for first-years — club projects showcase, technical games, and an intro to the FOSS community.",
     icon: FaChalkboardTeacher,
     status: "completed",
-    exploreLink: "https://unlocked.fossmpstme.com",
   },
   {
     title: "Code Forge 2026",
@@ -219,9 +218,8 @@ function EventsSection() {
                   <Icon size={20} />
                 </div>
                 <span
-                  className={`event-card__badge ${
-                    isUpcoming ? "event-card__badge--upcoming" : "event-card__badge--done"
-                  }`}
+                  className={`event-card__badge ${isUpcoming ? "event-card__badge--upcoming" : "event-card__badge--done"
+                    }`}
                 >
                   {isUpcoming ? "Upcoming" : "Completed"}
                 </span>

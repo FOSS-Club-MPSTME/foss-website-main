@@ -272,6 +272,7 @@ export const events = [
     ],
     icon: FaTrophy,
     status: "upcoming",
+    exploreLink: "https://hackforge.fossmpstme.com",
   },
   {
     id: "commit-2",

@@ -132,6 +132,7 @@ const events = [
       "A 24-hour overnight hackathon — 3-member teams tackle real-world challenges across two specialized tracks.",
     icon: FaTrophy,
     status: "upcoming",
+    exploreLink: "https://hackforge.fossmpstme.com",
   },
   {
     title: "COMMIT 2.0",
